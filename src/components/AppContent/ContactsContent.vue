@@ -17,8 +17,8 @@
 			<template #icon>
 				<IconContact :size="20" />
 			</template>
-			<template #desc>
-				<NcButton variant="primary" @click="newContact">
+			<template #description>
+				<NcButton v-if="!isReadOnlyAddressbook" variant="primary" @click="newContact">
 					{{ t('contacts', 'Create contact') }}
 				</NcButton>
 			</template>
@@ -30,7 +30,7 @@
 			<template #icon>
 				<IconContact :size="20" />
 			</template>
-			<template #desc>
+			<template #description>
 				<NcButton v-if="contacts.length === 0" variant="primary" @click="addContactsToGroup(selectedGroup)">
 					{{ t('contacts', 'Create contacts') }}
 				</NcButton>
@@ -142,6 +142,16 @@ export default {
 			return this.contactsList.length === 0
 		},
 
+		/**
+		 * Is the selected address book read only
+		 *
+		 * @return {boolean}
+		 */
+		isReadOnlyAddressbook() {
+			return !!this.$store.getters.getAddressbooks
+				.find((addressbook) => addressbook.id === this.selectedAddressbook)?.readOnly
+		},
+
 		showDetails() {
 			return !!this.selectedContact
 		},
@@ -169,12 +179,7 @@ export default {
 		 */
 		hideDetails() {
 			// Reset the selected contact
-			this.$router.push({
-				name: 'group',
-				params: {
-					selectedGroup: this.selectedGroup,
-				},
-			})
+			this.$router.push(this.listRoute())
 		},
 	},
 }

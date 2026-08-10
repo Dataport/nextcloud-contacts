@@ -4,6 +4,8 @@ OC.L10N.register(
     "Import contacts" : "Importar contactos",
     "Details" : "Detalhes",
     "All contacts" : "Todos os contactos",
+    "_Imported %n contact_::_Imported %n contacts_" : ["%n contato importado","%n de contatos importados","%n contatos importados"],
+    "_(skipped %n contact)_::_(skipped %n contacts)_" : ["(%n contato ignorado)","(%n de contatos ignorados)","(%n contatos ignorados)"],
     "Contacts" : "Contactos",
     "A contacts app for Nextcloud" : "Uma  aplicação de contactos para o Nextcloud",
     "The Nextcloud contacts app is a user interface for Nextcloud's CardDAV server. Easily sync contacts from various devices with your Nextcloud and edit them online.\n\n* 🚀 **Integration with other Nextcloud apps!** Currently Mail and Calendar – more to come.\n* 🎉 **Never forget a birthday!** You can sync birthdays and other recurring events with your Nextcloud Calendar.\n* 👥 **Sharing of Adressbooks!** You want to share your contacts with your friends or coworkers? No problem!\n* 🙈 **We’re not reinventing the wheel!** Based on the great and open SabreDAV library." : "A aplicação de contactos do Nextcloud disponibiliza ao utilizador uma interface para o servidor Nextcloud's CardDAV. Sincronize contactos facilmente a partir de vários dispositivos com o seu Nextcloud e edite-os online.\n\n* 🚀 **Integração com outras aplicações Nextcloud!** Atualmente apenas o Mail e o Calendar - mais se seguirão.\n* 🎉 **Nunca mais se esqueça de uma aniversário!** Pode sincronizar aniversários e outros eventos recorrentes com o seu Nextcloud Calendar.\n* 👥 **Partilha de livros de endereços!**Quer partilhar os seus contactos com amigos ou colegas? Sem problema!\n* 🙈 **Não estamos a reinventar a roda!** Esta aplicação é baseada na livre e fantástica biblioteca SabreDAV.",
@@ -210,7 +212,6 @@ OC.L10N.register(
     "Pending" : "Pendente",
     "Select chart …" : "Selecione um gráfico …",
     "Chart" : "Gráfico",
-    "Select Date" : "Escolha a data",
     "Select type" : "Escolha o tipo",
     "Add contact in group" : "Adicionar contacto ao grupo",
     "None" : "Nenhum",
@@ -339,6 +340,7 @@ OC.L10N.register(
     "Board name" : "Nome do painel",
     "Deck app is not installed. Please install it to create team boards." : "O aplicativo Deck não está instalado. Por favor, instale-o para criar painéis de equipe.",
     "No other contacts available to select as line manager" : "Não há outros contatos disponíveis para selecionar como superior hierárquico",
+    "Select Date" : "Escolha a data",
     "note" : "nota"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
