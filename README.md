@@ -33,14 +33,6 @@ The app is distributed through the [app store](https://apps.nextcloud.com/apps/c
 
 Release tarballs are hosted at https://github.com/nextcloud-releases/contacts/releases.
 
-## Configuration
-
-Hide the button on the team page that creates a personal folder and shares it with the team. Useful when organizations want users to use Team Folders instead of personal shares for collaborative work. Defaults to false (the button is shown). This only applies while Contacts still shows the team page (Nextcloud 34 and below).
-
-```bash
-occ config:app:set contacts hide_team_shared_folder_creation --value=true
-```
-
 ## :satellite: Support
 
 If you need assistance or want to ask a question about Contacts, you are welcome to [ask for support](https://help.nextcloud.com) in our forums. If you have found a bug, feel free to open a new Issue on GitHub. Keep in mind, that this repository only manages the frontend. If you find bugs or have problems with the CardDAV-Backend, you should ask the team at [Nextcloud server](https://github.com/nextcloud/server) for help!
